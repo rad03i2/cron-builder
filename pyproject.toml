@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cron-builder"
+version = "1.0.0"
+description = "Build, explain, validate, and preview standard five-field cron expressions locally."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Radwan Abdulhadi Ahmed"}]
+keywords = ["cron", "scheduler", "cli", "developer-tools"]
+
+[project.scripts]
+cron-builder = "cron_builder.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
